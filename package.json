@@ -4,9 +4,22 @@
   "description": "smth",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "./node_modules/.bin/gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LaBay/js.hm-19-20.git"
+  },
+  "keywords": [
+    "sass"
+  ],
   "author": "LaBay",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaBay/js.hm-19-20/issues"
+  },
+  "homepage": "https://github.com/LaBay/js.hm-19-20#readme",
+  "devDependencies": {
+    "gulp-sass": "^2.3.1"
+  }
 }
