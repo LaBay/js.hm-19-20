@@ -1,0 +1,12 @@
+{
+  "name": "js.hm-19-20",
+  "version": "1.0.0",
+  "description": "smth",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "author": "LaBay",
+  "license": "ISC"
+}
