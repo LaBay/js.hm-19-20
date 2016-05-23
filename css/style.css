@@ -1,3 +1,5 @@
+/*$font:		'Ubuntu', sans-serif;
+$bg_color: 	#ffffff;*/
 * {
   margin: 0;
   padding: 0; }
@@ -6,7 +8,8 @@ body {
   width: 1920px;
   height: 2681px;
   padding: 37px 380px 0 380px;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffffff; }
   body main {
     width: 1920px;
     height: 1010px; }
@@ -34,5 +37,83 @@ body {
         text-transform: uppercase;
         letter-spacing: 4.6px;
         color: #8f8f8f; }
+  body .menu-top {
+    width: 1160px;
+    height: 55px;
+    margin-top: 37px;
+    background-color: #2a2d32;
+    list-style-type: none; }
+    body .menu-top .menu-top__item {
+      display: inline-block;
+      border-right: 1px solid black;
+      color: #ffffff; }
+      body .menu-top .menu-top__item a {
+        color: inherit;
+        text-decoration: none;
+        line-height: 55px;
+        margin-left: 40px;
+        margin-right: 40px; }
+    body .menu-top .menu-top__item--blue {
+      background-color: #248cec; }
+    body .menu-top .menu-top__item--search {
+      float: right;
+      padding: 8px;
+      border-right: none; }
+      body .menu-top .menu-top__item--search input {
+        height: 38px;
+        width: 240px;
+        background-color: #35383c;
+        color: #ffffff;
+        font-family: Arial;
+        font-weight: 12px;
+        text-indent: 12px;
+        border: 1px solid black;
+        background-image: url(../bkgd/search-logo.png);
+        background-repeat: no-repeat;
+        background-position: 95% 50%; }
+    body .menu-top .menu-top__item--search:after {
+      content: "";
+      clear: both; }
+    body .menu-top .menu-top__item:hover {
+      color: #cc9919;
+      cursor: pointer; }
+  body .gallery-wrapper {
+    width: 1160px;
+    height: 670px;
+    margin-top: 40px; }
+  body .main-section {
+    height: 200px;
+    width: 1160px; }
+    body .main-section .main-section__item {
+      float: left;
+      height: 180px; }
+      body .main-section .main-section__item h2 {
+        color: #2a2b2e;
+        font-size: 20px; }
+      body .main-section .main-section__item p {
+        color: #8a8a8a;
+        font-family: Arial;
+        font-size: 13px; }
+      body .main-section .main-section__item a {
+        color: #2a2b2e;
+        font-size: 13px;
+        text-decoration: none;
+        display: block; }
+      body .main-section .main-section__item a:after {
+        margin-top: 1px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        content: "";
+        margin-left: 8px;
+        background: url(../bkgd/arrow-logo.png);
+        background-repeat: no-repeat;
+        background-position: 120% 55%; }
+    body .main-section .main-section__item--content-small-block {
+      font-size: 90px;
+      font-weight: 500;
+      color: #efeff0; }
+    body .main-section .main-section__item--content-block {
+      width: 240px; }
 
 /*font-family: 'Ubuntu Condensed', sans-serif;*/
