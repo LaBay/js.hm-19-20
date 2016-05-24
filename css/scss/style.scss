@@ -1,5 +1,11 @@
-/*$font:		'Ubuntu', sans-serif;
-$bg_color: 	#ffffff;*/
+$font-norm:		Ubuntu, sans-serif;
+$font-cond: 	'Ubuntu Condensed', sans-serif;
+$bg_color: 	#ffffff;
+
+@mixin section-bg-image{
+	background-repeat: no-repeat;
+	background-position: 15% 9%;
+}
 
 * {
 	margin: 0;
@@ -9,7 +15,7 @@ body{
 	width: 1920px;
 	height: 2681px;
 	padding: 37px 380px 0 380px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: $font-norm;
 	background-color: #ffffff;
 
 	main{
@@ -40,7 +46,7 @@ body{
 			#logo-item2{
 				position: absolute;
 				top: 25px;
-				font-family: 'Ubuntu Condensed', sans-serif;
+				font-family: $font-cond;
 				font-size: 12px;
 				text-transform: uppercase;
 				letter-spacing: 4.6px;
@@ -103,14 +109,13 @@ body{
 	
 	.gallery-wrapper{
 		width: 1160px;
-		height: 670px;
+		height: 560px;
 		margin-top: 40px;
 	}
 	
 	.main-section{
 		height: 200px;
 		width: 1160px;
-
 	
 
 		.main-section__item{
@@ -121,18 +126,24 @@ body{
 				h2{
 					color: #2a2b2e;
 					font-size: 20px;
+					margin-bottom: 20px;
 				}
 				p{
 					color: #8a8a8a;
 					font-family: Arial;
 					font-size: 13px;
+					line-height: 20px;
+					margin-bottom: 20px;
 				}
 				a{
 					color: #2a2b2e;
 					font-size: 13px;
 					text-decoration: none;
 					display: block;
-					
+				}
+				a:hover{
+					color: #248cec;
+						}
 				}
 				a:after{
 					margin-top: 1px;
@@ -148,6 +159,7 @@ body{
 		}
 
 		.main-section__item--content-small-block{
+			margin-right: -10px;
 			font-size: 90px;
 			font-weight: 500;
 			color: #efeff0;
@@ -156,10 +168,26 @@ body{
 
 		.main-section__item--content-block{
 			width: 240px;
+			padding: 65px 0 0 40px;
 		}
 
 	}
+		.main-section__item--content-block--1{
+			background: url(../bkgd/settings-logo.png);
+			@include section-bg-image;
+			}
+		.main-section__item--content-block--2{
+			background: url(../bkgd/params-logo.png);
+			@include section-bg-image;
+			}
+		.main-section__item--content-block--3{
+			background: url(../bkgd/truck-logo.png);
+			@include section-bg-image;
+			}
+
 }
+
+
 
 
 

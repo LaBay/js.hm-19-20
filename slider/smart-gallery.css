@@ -1,21 +1,21 @@
 ﻿.min-gallery
 {
-	width: 823px;
+	/*width: 823px;
 	height: 630px;
 	border: solid 1px black;
 	background-color: Black;
-	background: url(bg.jpg);
+	background: url(bg.jpg);*/
 	margin: auto;
 }
 .min-gallery .preview
 {
-	width: 747px;
-	height: 493px;
-	margin-top: 36px;
+	width: 1158px;
+	height: 463px;
+	/*margin-top: 36px;
 	margin-left: 36px;
-	margin-right: 36px;
+	margin-right: 36px;*/
 	position: relative;
-	border: solid 2px black;
+	border: solid 1px gray;
 	overflow: hidden;
 	background-color: White;
 }
@@ -57,13 +57,14 @@
 }
 .min-gallery .bottom .short .left
 {
-	padding-left: 44px;
+	padding-left: 190px;
 	padding-top: 42px;
 	width: 322px;
 	float: left;
+	display: none;
 }
 .min-gallery .bottom .short .middle
-{
+{	padding-left: 507px;
 	width: 118px;
 	float: left;
 }
@@ -74,6 +75,7 @@
 	text-align: right;
 	padding-right: 38px;
 	padding-top: 42px;
+	display: none;
 }
 .min-gallery .bottom .short .middle > div
 {
@@ -130,7 +132,7 @@
 	width: 100%;
 	height: 100px;
 	background-color: Black;
-	widht: 100%;
+	width: 100%;
 	z-index: 102;
 	color: gray;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
