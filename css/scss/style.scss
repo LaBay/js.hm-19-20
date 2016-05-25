@@ -17,6 +17,7 @@ body{
 	padding: 37px 380px 0 380px;
 	font-family: $font-norm;
 	background-color: #ffffff;
+	//margin-left: 20px;
 
 	main{
 		width: 1920px;
@@ -66,6 +67,7 @@ body{
 				display: inline-block;
 				border-right: 1px solid black;
 				color: #ffffff;
+				transition: 0.2s;
 					a {
 						color: inherit;
 						text-decoration: none;
@@ -143,7 +145,7 @@ body{
 				}
 				a:hover{
 					color: #248cec;
-						}
+				}
 				}
 				a:after{
 					margin-top: 1px;
@@ -183,12 +185,69 @@ body{
 		.main-section__item--content-block--3{
 			background: url(../bkgd/truck-logo.png);
 			@include section-bg-image;
+		}
+		
+		.menu-middle{
+			width: 1920px;
+			height: 455px;
+			margin-left: -380px;
+			padding: 45px 0 0 0;
+			clear: both;
+			background-color: #2a2d32;
+			font-family: $font-norm;
+			color: white;
+			
+				h2{
+					font-size: 24px;
+					color: inherit;
+					font-weight: 500;
+					margin-left: 380px;
+				}
+
+			.menu-middle__item-1{
+				margin-left: 380px;
 			}
+		}
+		.menu-middle__item{
+			position: relative;
+			margin: 52px 40px 0 0;
+			height: 260px;
+			width: 260px;
+			float: left;
+			text-align: center;
+			transition: 1s;
+				img{
+					position: relative;
+				}
+				figcaption{
+					margin-top: 30px;
+						}
+		}
 
-}
+		.menu-middle__item:after{
+			left: 0px;
+			top: 0px;
+			position: absolute;
+			height: 260px;
+			width: 260px;
+			content: " ";
+			background: url(../img/img5.png);
+			z-index: 500;
+			opacity: 0;
+			transition: 1s;
+		}
+
+		.menu-middle__item:hover{
+			color: #f4b60d;
+
+		}
+		.menu-middle__item:hover:after{
+			opacity: 0.7;
+		}
+	
 
 
 
 
 
-/*font-family: 'Ubuntu Condensed', sans-serif;*/
+
