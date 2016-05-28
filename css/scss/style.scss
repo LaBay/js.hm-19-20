@@ -126,23 +126,21 @@ main{
 			float: left;
 			list-style-type: none;
 
-				a{			width: 17px;
-			height: 16px;
+				a{
+			display: block;
+			width: 16px;
+			height: 17px;
+			margin-left: 20px;
 			overflow: hidden;
 			background: url(../bkgd/networks.png) no-repeat;
-			margin-left: 20px;
-			
-					display: block;
-					width: 17px;
-					height: 16px;
-				}
+			}
 		}
 
 		.networks__item--fb a{
-			background-position: 0 0;
+			background-position: 1px 0;
 		}
 		.networks__item--twitter a{
-			background-position: -16px 0;
+			background-position: -15px 0;
 		}
 		.networks__item--rss a{
 			background-position: -32px 0;
@@ -151,15 +149,15 @@ main{
 			background-position: -48px 0;
 		}
 		.networks__item--skype a{
-			background-position: -66px 0;
+			background-position: -65px 0;
 		}
 
 
 		.networks__item--fb a:hover{
-			background-position: 0 -18px;
+			background-position: 1px -18px;
 		}
 		.networks__item--twitter a:hover{
-			background-position: -16px -18px;
+			background-position: -15px -18px;
 		}
 		.networks__item--rss a:hover{
 			background-position: -32px -18px;
@@ -168,7 +166,7 @@ main{
 			background-position: -48px -18px;
 		}
 		.networks__item--skype a:hover{
-			background-position: -66px -18px;
+			background-position: -65px -18px;
 		}
 
 }
